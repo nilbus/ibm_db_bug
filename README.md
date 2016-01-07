@@ -57,6 +57,10 @@ add_foreign_key "AUDIT_DETAILS", "AUDITS", column: "AUDIT_ID", primary_key: "ID"
 Note that the actions in schema.rb are swapped from the actual constraint
 actions:
 
+```ruby
+on_update: :cascade, on_delete: :restrict
+```
+
 ```sql
 ON DELETE CASCADE
 ON UPDATE RESTRICT
