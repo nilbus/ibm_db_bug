@@ -12,7 +12,7 @@ constraints are added to schema.rb after migrating.
 Reproducing
 -----------
 
-1. Clone this repository
+1. Clone this repository, which uses ibm_db-3.0.1 on rails-4.2.5.
 2. Create a `config/database.yml` configuration appropriate for your local
    setup. Include `schema: IBM_DB_BUG` in the database configuration for
    isolation and consistency with this example. Example:
